@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Il Mio Sito</title>
+</head>
+<body>
+    <h1>Benvenuto</h1>
+    <p>Contenuto del mio sito...</p>
+    
+    <!-- Script del Chatbot JotForm -->
+    <script src="https://cdn.jotfor.ms/s/umd/latest/for-embedded-agent.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", function() {
+            window.AgentInitializer.init({
+                rootId: "JotformAgent-0196c02136e67d12956432800e34997388b5",
+                formID: "0196c02136e67d12956432800e34997388b5",
+                queryParams: ["skipWelcome=1", "maximizable=1"],
+                domain: "https://eu.jotform.com",
+                isInitialOpen: false,
+                isDraggable: false,
+                background: "linear-gradient(180deg, #035C5F 0%, #035C5F 100%)",
+                buttonBackgroundColor: "#8E1CA8",
+                buttonIconColor: "#FFFFFF",
+                variant: false,
+                customizations: {
+                    greeting: "Yes",
+                    greetingMessage: "Hi! How can I assist you?",
+                    pulse: "Yes",
+                    position: "right"
+                }
+            });
+        });
+    </script>
+</body>
+</html>
